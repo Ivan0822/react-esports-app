@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edc397256c7a3adc2b4941c617ac484f",
+    "revision": "70aeeac41972347963b78233b3bf7389",
     "url": "/react-esports-app/index.html"
   },
   {
-    "revision": "7b68b13436edcb462564",
+    "revision": "f3b6717eb8b4c95ff188",
     "url": "/react-esports-app/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-esports-app/static/js/2.f2d17db0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7b68b13436edcb462564",
-    "url": "/react-esports-app/static/js/main.65151a86.chunk.js"
+    "revision": "f3b6717eb8b4c95ff188",
+    "url": "/react-esports-app/static/js/main.e815c941.chunk.js"
   },
   {
     "revision": "cf6a8d715117f96d4920",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-esports-app/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/react-esports-app/static/js/main.65151a86.chunk.js",
-    "main.js.map": "/react-esports-app/static/js/main.65151a86.chunk.js.map",
+    "main.js": "/react-esports-app/static/js/main.e815c941.chunk.js",
+    "main.js.map": "/react-esports-app/static/js/main.e815c941.chunk.js.map",
     "runtime-main.js": "/react-esports-app/static/js/runtime-main.48d6f5b1.js",
     "runtime-main.js.map": "/react-esports-app/static/js/runtime-main.48d6f5b1.js.map",
     "static/js/2.f2d17db0.chunk.js": "/react-esports-app/static/js/2.f2d17db0.chunk.js",
     "static/js/2.f2d17db0.chunk.js.map": "/react-esports-app/static/js/2.f2d17db0.chunk.js.map",
     "index.html": "/react-esports-app/index.html",
-    "precache-manifest.2839bc1c7f85b202366128fb378334a2.js": "/react-esports-app/precache-manifest.2839bc1c7f85b202366128fb378334a2.js",
+    "precache-manifest.b1962ebc7a2a5a61a4f4a155ba14c18f.js": "/react-esports-app/precache-manifest.b1962ebc7a2a5a61a4f4a155ba14c18f.js",
     "service-worker.js": "/react-esports-app/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/react-esports-app/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.f2d17db0.chunk.js.LICENSE.txt": "/react-esports-app/static/js/2.f2d17db0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.48d6f5b1.js",
     "static/js/2.f2d17db0.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.65151a86.chunk.js"
+    "static/js/main.e815c941.chunk.js"
   ]
 }
