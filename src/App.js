@@ -42,31 +42,31 @@ function App() {
 
   return (
     <>
-      {/* {logged ? */}
-      <Router basename="/react-esports-app">
-        <GlobalStyle />
-        <Navbar setLogged={setLogged} />
-        <Switch>
-          <Route exact path="/">
-            <EventFilter tourArray={tourArray} setTourArray={setTourArray} allTournaments={allTournaments} />
-            <EventList tourArray={tourArray} />
-          </Route>
-          <Route path="/worlds">
-            <Worlds />
-          </Route>
-          <Route path="/teams">
-            <Teams favTeams={favTeams} setFavTeams={setFavTeams} />
-          </Route>
-          <Route exact path="/myteams">
-            <MyTeams favTeams={favTeams} setFavTeams={setFavTeams} />
-          </Route>
-          <Route path="/myteams/:id">
-            <MyTeamRoster favTeams={favTeams} />
-          </Route>
-        </Switch>
-      </Router>
-      {/* :
-        <Login setLogged={setLogged} />} */}
+      {logged ?
+        <Router basename="/react-esports-app">
+          <GlobalStyle />
+          <Navbar setLogged={setLogged} />
+          <Switch>
+            <Route exact path="/">
+              <EventFilter tourArray={tourArray} setTourArray={setTourArray} allTournaments={allTournaments} />
+              <EventList tourArray={tourArray} />
+            </Route>
+            <Route path="/worlds">
+              <Worlds />
+            </Route>
+            <Route path="/teams">
+              <Teams favTeams={favTeams} setFavTeams={setFavTeams} />
+            </Route>
+            <Route exact path="/myteams">
+              <MyTeams favTeams={favTeams} setFavTeams={setFavTeams} />
+            </Route>
+            <Route path="/myteams/:id">
+              <MyTeamRoster favTeams={favTeams} />
+            </Route>
+          </Switch>
+        </Router>
+        :
+        <Login setLogged={setLogged} />}
     </>
   );
 }
