@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "id": "fe385bb0-fe95-11ea-b9a0-33117c7edaef",
+      "username": "Ivan",
+      "password": "IvanIvan"
+    },
+    {
+      "id": "09cd7230-fe96-11ea-b81a-4376cf928e9a",
+      "username": "Ivna",
+      "password": "Ivan"
+    },
+    {
+      "id": "d9dd7420-fe96-11ea-8c99-a5e2c2ea4998",
+      "username": "Ivan",
+      "password": "asdsa"
+    },
+    {
+      "id": "eeffc330-fe96-11ea-a992-91b7aa1f24a2",
+      "username": "Ivan",
+      "password": "Banovacki"
+    },
+    {
+      "id": "0383d670-fe97-11ea-b8c4-b586f21fdbfb",
+      "username": "Ivan",
+      "password": "Ivan"
+    },
+    {
+      "id": "551a3880-fe97-11ea-adbf-a98a6862c039",
+      "username": "Ivan",
+      "password": "Ivan"
+    },
+    {
+      "id": "707edae0-fe97-11ea-8586-21ce1c56dd15",
+      "username": "Ivan",
+      "password": "Banovacki"
+    },
+    {
+      "id": "c91d5140-fe97-11ea-a51c-dd617c0f17f6",
+      "username": "Ivan",
+      "password": "Banovacki"
+    },
+    {
+      "id": "e497eca0-fe97-11ea-bd3a-890e57c26746",
+      "username": "Ivan",
+      "password": "Banovacki"
+    },
+    {
+      "id": "f7ecceb0-fe97-11ea-8290-0bb5258aaa90",
+      "username": "sdsa",
+      "password": "ads"
+    },
+    {
+      "id": "fc468be0-fe97-11ea-8290-0bb5258aaa90",
+      "username": "dsfdsf",
+      "password": "fdsdsf"
+    },
+    {
+      "id": "08f9bc90-fe98-11ea-8290-0bb5258aaa90",
+      "username": "sad",
+      "password": "sadds"
+    },
+    {
+      "id": "0b865ae0-fe98-11ea-8290-0bb5258aaa90",
+      "username": "sadsasad",
+      "password": "saddsa"
+    },
+    {
+      "id": "aaad58c0-fe99-11ea-a7e5-57584674c0c4",
+      "username": "sa",
+      "password": "sadas"
+    },
+    {
+      "id": "b16b7980-fe9e-11ea-ba51-6dc8eed3e8ca",
+      "username": "dsadsa",
+      "password": "fty"
+    },
+    {
+      "id": "b4744cb0-fe9e-11ea-ba51-6dc8eed3e8ca",
+      "username": "zczzxc",
+      "password": "rrgd"
+    },
+    {
+      "id": "c136e6b0-fe9e-11ea-a9d8-d3f61ee528ac",
+      "username": "xzcz",
+      "password": "xzcxz"
+    },
+    {
+      "id": "eb9d1690-fe9e-11ea-a9d8-d3f61ee528ac",
+      "username": "sadsa",
+      "password": "sa"
+    },
+    {
+      "id": "04928db0-fe9f-11ea-9984-7937cefd4670",
+      "username": "sad",
+      "password": "sad",
+      "teams": []
+    },
+    {
+      "id": "0804aa00-fe9f-11ea-b9b7-59379e7c8fc8",
+      "username": "sadsa",
+      "password": "sadsa",
+      "teams": []
+    },
+    {
+      "id": "2e502c10-fea0-11ea-bf81-bfb542e17fad",
+      "username": "dsas",
+      "password": "saddsa",
+      "teams": []
+    }
+  ]
+}
