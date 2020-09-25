@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { getTeamRoster } from '../../../services';
+import { RosterContainer } from './MyTeamRoster.elements';
 import Player from './Player/Player';
 
 const MyTeamRoster = ({ favTeams }) => {
@@ -53,9 +54,9 @@ const MyTeamRoster = ({ favTeams }) => {
 
 
     return (
-        <>
+        <RosterContainer>
             <Player player={roster} />
-        </>
+        </RosterContainer>
     )
 }
 

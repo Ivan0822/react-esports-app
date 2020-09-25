@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 
 export const PlayerContainer = styled.section`
-    width: 80%;
+    width: 70%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 8px 2px hsla(0, 0%, 0%, 0.2);
 
 `
 
