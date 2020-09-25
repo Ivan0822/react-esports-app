@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       {logged ?
-        <HashRouter>
+        <Router basename="/">
           <GlobalStyle />
           <Navbar setLogged={setLogged} />
           <Switch>
@@ -63,7 +63,7 @@ function App() {
               <MyTeamRoster favTeams={favTeams} />
             </Route>
           </Switch>
-        </HashRouter>
+        </Router>
         :
         <Login setLogged={setLogged} />}
     </>
