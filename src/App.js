@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       {logged ?
-        <Router basename="/">
+        <Router basename="/react-esports-app">
           <GlobalStyle />
           <Navbar setLogged={setLogged} />
           <Switch>
