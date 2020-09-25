@@ -1,6 +1,5 @@
 import { Button, Input } from '@material-ui/core';
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { v1 as uuidv1 } from 'uuid'
 import { getAllUsers, postLoginInfo } from '../../services';
 import { LoginSmallContainer, LoginLargeContainer } from './Login.elements';
@@ -10,8 +9,6 @@ const Login = ({ setLogged }) => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState(false)
-
-    const history = useHistory()
 
     const validateInput = () => {
         if (username.trim().length === 0 || password.trim().length === 0) {

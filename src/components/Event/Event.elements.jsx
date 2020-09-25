@@ -23,6 +23,9 @@ export const EventImage = styled.img`
     padding-left: 20px;
     padding-right: 20px;
 
+    @media screen and (max-width: 991px){
+        width: 100px;
+    }
 `
 
 export const EventDescContainer = styled.section`

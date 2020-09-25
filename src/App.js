@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, BrowserRouter, HashRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom'
 import { GlobalStyle } from './globalStyles'
 import EventFilter from './components/EventFilter/EventFilter';
 import Navbar from './components/Navbar/Navbar';
@@ -31,8 +31,9 @@ function App() {
 
   useEffect(() => {
     getAllTournaments().then(res => {
-      setAllTournaments(getUniqueArray(res.data).slice(0, 20))
-      setTourArray(getUniqueArray(res.data).slice(0, 20))
+      console.log(res.data);
+      setAllTournaments(getUniqueArray(res.data))
+      setTourArray(getUniqueArray(res.data))
     })
 
   }, [])
@@ -41,31 +42,31 @@ function App() {
 
   return (
     <>
-      {logged ?
-        <Router basename="/react-esports-app">
-          <GlobalStyle />
-          <Navbar setLogged={setLogged} />
-          <Switch>
-            <Route exact path="/">
-              <EventFilter tourArray={tourArray} setTourArray={setTourArray} allTournaments={allTournaments} />
-              <EventList tourArray={tourArray} />
-            </Route>
-            <Route path="/worlds">
-              <Worlds />
-            </Route>
-            <Route path="/teams">
-              <Teams favTeams={favTeams} setFavTeams={setFavTeams} />
-            </Route>
-            <Route exact path="/myteams">
-              <MyTeams favTeams={favTeams} setFavTeams={setFavTeams} />
-            </Route>
-            <Route path="/myteams/:id">
-              <MyTeamRoster favTeams={favTeams} />
-            </Route>
-          </Switch>
-        </Router>
-        :
-        <Login setLogged={setLogged} />}
+      {/* {logged ? */}
+      <Router basename="/react-esports-app">
+        <GlobalStyle />
+        <Navbar setLogged={setLogged} />
+        <Switch>
+          <Route exact path="/">
+            <EventFilter tourArray={tourArray} setTourArray={setTourArray} allTournaments={allTournaments} />
+            <EventList tourArray={tourArray} />
+          </Route>
+          <Route path="/worlds">
+            <Worlds />
+          </Route>
+          <Route path="/teams">
+            <Teams favTeams={favTeams} setFavTeams={setFavTeams} />
+          </Route>
+          <Route exact path="/myteams">
+            <MyTeams favTeams={favTeams} setFavTeams={setFavTeams} />
+          </Route>
+          <Route path="/myteams/:id">
+            <MyTeamRoster favTeams={favTeams} />
+          </Route>
+        </Switch>
+      </Router>
+      {/* :
+        <Login setLogged={setLogged} />} */}
     </>
   );
 }

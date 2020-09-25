@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { EventContainer, EventImage, EventImageContainer, EventDescContainer } from './Event.elements'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const Event = ({ image, name, id }) => {
+const Event = ({ event }) => {
 
-    const [array, setArray] = useState([])
-    const [tour, setTour] = useState([])
+    let eventDate = event.begin_at.slice(0, 9)
 
-    console.log(array);
 
     return (
-        <Link to={`/tournaments/${id}`}>
+        <Link to={`/tournaments/${event.id}`}>
             <EventContainer>
                 <EventImageContainer>
-                    <EventImage src={image} />
+                    <EventImage src={event.league.image_url} />
                 </EventImageContainer>
                 <EventDescContainer>
-                    <h2>{name}</h2>
+                    <h2>{event.league.name + " " + event.serie.full_name}</h2>
+                    <p>Starts: {eventDate}</p>
                 </EventDescContainer>
             </EventContainer>
         </Link>

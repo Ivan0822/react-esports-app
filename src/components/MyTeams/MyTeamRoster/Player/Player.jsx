@@ -34,10 +34,10 @@ const Player = ({ player }) => {
             <PlayerInfoContainer>
                 <p>BIRTHDATE: {player.birthday}</p>
                 <p>ROLE: {formatRole()}</p>
-                <p>HOMETOWN: {player.hometown}</p>
+                <p>COUNTRY: {player.hometown}</p>
             </PlayerInfoContainer>
             <PlayerLeaguepedia>
-                <a href={`https://lol.gamepedia.com/${player.name}`} target="_blank">
+                <a href={`https://lol.gamepedia.com/${player.name}`} target="_blank" rel="noopener noreferrer">
                     <Button variant="contained" color="primary">
                         Biography
                     </Button>

@@ -1,6 +1,5 @@
 import { Button } from '@material-ui/core'
 import React, { useState } from 'react'
-import { useHistory } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { MobileIcon, Nav, NavbarContainer, NavIcon, NavItem, NavLinks, NavLogo, NavMenu } from './Navbar.elements'
@@ -23,7 +22,7 @@ const Navbar = ({ setLogged }) => {
                     <NavbarContainer>
                         <NavLogo to="/">
                             <NavIcon />
-                    E-SPORTS EVENTS
+                    E-SPORTS APP
                 </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}

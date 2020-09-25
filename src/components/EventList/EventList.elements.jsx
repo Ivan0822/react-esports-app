@@ -5,8 +5,16 @@ import { Container } from '../../globalStyles'
 export const EventListLargeContainer = styled.section`
     background-color: #F5F5F5;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    section{
+        button{
+            margin-top: 1rem;
+            margin-right: 1rem;
+        }
+    }
 `
 export const EventListSmallContainer = styled(Container)`
     margin: auto;

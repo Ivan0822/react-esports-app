@@ -1,6 +1,6 @@
 import { Button } from '@material-ui/core'
-import React, { useRef, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import { MyTeamSmallContainer, MyTeamName, MyTeamImage, MyTeamLargeContainer } from './MyTeam.elements'
 
 const MyTeam = ({ team, favTeams, setFavTeams }) => {
@@ -12,6 +12,7 @@ const MyTeam = ({ team, favTeams, setFavTeams }) => {
         tmp.splice(index, 1)
         setFavTeams(tmp)
     }
+
 
     return (
         <MyTeamLargeContainer>

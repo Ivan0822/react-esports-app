@@ -24,7 +24,7 @@ const EventFilter = ({ allTournaments, setTourArray, tourArray }) => {
             let tmp = [...allTournaments]
             setTourArray(tmp.filter(el => el.videogame.slug === selectGame))
         }
-        else {
+        else if (selectTime !== '') {
             getTournamentsByTime(selectTime).then(res => {
                 if (selectGame === '') {
                     setTourArray(getUniqueArray(res.data))
@@ -34,7 +34,11 @@ const EventFilter = ({ allTournaments, setTourArray, tourArray }) => {
                 }
             })
         }
+        else {
+            setTourArray(getUniqueArray(allTournaments))
+        }
         console.log(tourArray);
+
     }, [selectTime, selectGame])
 
 
