@@ -4,7 +4,6 @@ import { GlobalStyle } from './globalStyles'
 import EventFilter from './components/EventFilter/EventFilter';
 import Navbar from './components/Navbar/Navbar';
 import EventList from './components/EventList/EventList'
-import TournamentInfo from './components/TournamentInfo/TournamentInfo'
 import { getAllTournaments } from './services';
 import Worlds from './components/Worlds/Worlds';
 import Teams from './components/Teams/Teams';
