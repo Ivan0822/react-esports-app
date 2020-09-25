@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, BrowserRouter, HashRouter } from 'react-router-dom'
 import { GlobalStyle } from './globalStyles'
 import EventFilter from './components/EventFilter/EventFilter';
 import Navbar from './components/Navbar/Navbar';
@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       {logged ?
-        <Router basename>
+        <HashRouter>
           <GlobalStyle />
           <Navbar setLogged={setLogged} />
           <Switch>
@@ -63,7 +63,7 @@ function App() {
               <MyTeamRoster favTeams={favTeams} />
             </Route>
           </Switch>
-        </Router>
+        </HashRouter>
         :
         <Login setLogged={setLogged} />}
     </>
