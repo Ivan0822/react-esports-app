@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.9fd5e8e4.chunk.js",
+    "main.js.map": "/%7Brepo-name%7D/static/js/main.9fd5e8e4.chunk.js.map",
+    "runtime-main.js": "/%7Brepo-name%7D/static/js/runtime-main.3b16bc12.js",
+    "runtime-main.js.map": "/%7Brepo-name%7D/static/js/runtime-main.3b16bc12.js.map",
+    "static/js/2.67b51c55.chunk.js": "/%7Brepo-name%7D/static/js/2.67b51c55.chunk.js",
+    "static/js/2.67b51c55.chunk.js.map": "/%7Brepo-name%7D/static/js/2.67b51c55.chunk.js.map",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "precache-manifest.a16acfa569efc48bd645a31b2b5d99be.js": "/%7Brepo-name%7D/precache-manifest.a16acfa569efc48bd645a31b2b5d99be.js",
+    "service-worker.js": "/%7Brepo-name%7D/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/%7Brepo-name%7D/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.67b51c55.chunk.js.LICENSE.txt": "/%7Brepo-name%7D/static/js/2.67b51c55.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b16bc12.js",
+    "static/js/2.67b51c55.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.9fd5e8e4.chunk.js"
+  ]
+}
