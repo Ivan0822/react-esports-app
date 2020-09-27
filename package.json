@@ -1,5 +1,6 @@
 {
     "homepage": "http://ivan0822.github.io/react-esports-app",
+    "proxy": "https://api.pandascore.co",
     "name": "esports-react-app",
     "version": "0.1.0",
     "private": true,
@@ -16,8 +17,7 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
         "styled-components": "^5.2.0",
-        "uuid": "^8.3.0",
-        "proxy": "https://api.pandascore.co"
+        "uuid": "^8.3.0"
     },
     "scripts": {
         "start": "react-scripts start",
