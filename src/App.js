@@ -5,7 +5,6 @@ import EventFilter from './components/EventFilter/EventFilter';
 import Navbar from './components/Navbar/Navbar';
 import EventList from './components/EventList/EventList'
 import { getAllTournaments } from './services';
-import Worlds from './components/Worlds/Worlds';
 import Teams from './components/Teams/Teams';
 import Login from './components/Login/Login';
 import MyTeams from './components/MyTeams/MyTeams';
@@ -50,9 +49,6 @@ function App() {
             <Route exact path="/">
               <EventFilter tourArray={tourArray} setTourArray={setTourArray} allTournaments={allTournaments} />
               <EventList tourArray={tourArray} />
-            </Route>
-            <Route path="/worlds">
-              <Worlds />
             </Route>
             <Route path="/teams">
               <Teams favTeams={favTeams} setFavTeams={setFavTeams} />

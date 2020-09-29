@@ -38,11 +38,6 @@ const Navbar = ({ setLogged }) => {
                                     Teams
                                 </NavLinks>
                             </NavItem>
-                            <NavItem>
-                                <NavLinks to='/worlds'>
-                                    Worlds 2020
-                                </NavLinks>
-                            </NavItem>
                             <NavLinks to='/myteams'>
                                 <Button variant="contained" color="secondary">
                                     MY TEAMS

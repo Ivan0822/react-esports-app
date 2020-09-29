@@ -20,7 +20,10 @@ const EventFilter = ({ allTournaments, setTourArray, tourArray }) => {
     }
 
     useEffect(() => {
-        if (selectTime === '') {
+        if (selectTime === '' && selectGame === '') {
+            setTourArray(getUniqueArray(allTournaments))
+        }
+        else if (selectTime === '') {
             let tmp = [...allTournaments]
             setTourArray(tmp.filter(el => el.videogame.slug === selectGame))
         }
@@ -34,11 +37,6 @@ const EventFilter = ({ allTournaments, setTourArray, tourArray }) => {
                 }
             })
         }
-        else {
-            setTourArray(getUniqueArray(allTournaments))
-        }
-        console.log(tourArray);
-
     }, [selectTime, selectGame])
 
 

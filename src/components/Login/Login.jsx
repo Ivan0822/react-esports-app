@@ -10,33 +10,45 @@ const Login = ({ setLogged }) => {
     const [password, setPassword] = useState("")
     const [error, setError] = useState(false)
 
-    const validateInput = () => {
+    const isValid = () => {
         if (username.trim().length === 0 || password.trim().length === 0) {
-            setError(true)
             return true
         }
         else return false
     }
+
+    const isDuplicate = (username, array) => {
+        return array.findIndex(user => user.username === username) !== -1
+    }
+
+    const isAuthenticated = (username, password, array) => {
+        return array.findIndex(user => user.username === username && user.password === password) !== -1
+    }
+
 
     const sendUserDetails = () => {
         const user = {
             id: uuidv1(),
             username: username,
             password: password,
-            teams: []
         }
         getAllUsers().then(res => {
-            res.data.forEach(el => {
-                if (el.username === user.username) {
+            if (isDuplicate(username, res.data) === true) {
+                if (isAuthenticated(username, password, res.data) === true) {
+                    setLogged(true)
+                }
+                else {
                     setError(true)
                 }
-            })
+            }
+            else if (isValid()) {
+                setError(true)
+            }
+            else if (!isValid()) {
+                postLoginInfo(user)
+                setLogged(true)
+            }
         })
-        if (!validateInput() && error === false) {
-            postLoginInfo(user)
-            setError(false)
-            setLogged(true)
-        }
     }
 
     const handleLogin = (e) => {

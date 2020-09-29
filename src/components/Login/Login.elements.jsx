@@ -20,7 +20,7 @@ export const LoginSmallContainer = styled.section`
     border-radius: 10px;
     background-color: #FFF;
     h2 {
-        color:
+        color: #262635;
     }
     form {
         display: flex;

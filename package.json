@@ -1,6 +1,5 @@
 {
     "homepage": "http://ivan0822.github.io/react-esports-app",
-    "proxy": "https://api.pandascore.co",
     "name": "esports-react-app",
     "version": "0.1.0",
     "private": true,
